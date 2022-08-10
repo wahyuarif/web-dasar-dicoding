@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @namespace example url(http://www.example.com);
+        example|h1 { color: rgba(111, 192, 4, 0) }
+        a{
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        a:hover{
+            background-color: black;
+            color: white;
+            text-decoration: underline;
+            font-size: 24px;
+        }
+        a[href]{
+            background-color: rgb(235, 130, 1);
+        }
+        /* element yang menerapkan #, pada value href nya */
+        a[href^="#"]{
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+        /* tanda * artinya semua yang mengandung */
+        a[href*="intensive" i]{
+            background-color: black;
+            color: white;
+        }
+        /* akan diterapkan pada elemen href yang mempunyai nilai akhir '.com' */
+        a[href$=".com"]{
+            /* background-color: green; */
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table border="solid">
+        <tr>
+            <th>hahaha</th>
+            <th>hahaha</th>
+        </tr>
+        <tr>
+            <td>jjjjj</td>
+            <td>jjjj</td>
+        </tr>
+        <tr>
+            <td>jjjjj</td>
+            <td>jjjj</td>
+        </tr>
+    </table>
+    <h1>kkjkjkjk</h1>
+    <a href="">Klik Disini</a>
+    <a href="#keterangan">Keterangan</a>
+    <a href="#INTENSIVE">Intensive</a>
+    <a href="www.almanshur.com">Kunjungi Link berikut</a>
+    
+</body>
+</html>

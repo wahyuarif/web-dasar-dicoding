@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    padding: 8px 16px;
+    padding: 5px;
+    justify-content: space-between;
+    top: 0;
+    position: sticky;
+}
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+}
+@media screen and(max-width:1000px) {
+    
+}

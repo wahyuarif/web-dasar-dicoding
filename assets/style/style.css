@@ -1,0 +1,114 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400&family=Quicksand:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+/* body done */
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main{
+    padding: 20px;
+    overflow: auto;
+}
+header{
+    display: inline;
+}
+h2, h3{
+    color: #00a2c6;
+ }
+
+
+ nav a:hover{
+     background-color: pink;
+     font-weight: bold;
+ }
+ .profile header{
+     text-align: center;
+ }
+
+ /* profile done */
+ .profile img{
+     width: 200px;
+ }
+
+ /* card done */
+ .card{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     border-radius: 5px;
+     padding: 20px;
+     margin-top: 20px;
+ }
+
+ /* Featured image done */
+ .featured-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+ }
+/* jumbotron done */
+ .jumbotron{
+     font-size: 20px;
+     padding: 60px;
+     background-color: #00c8eb;
+     text-align: center;
+     color: white;
+ }
+
+ /* nav done */
+ nav li{
+     display: inline;
+     list-style-type: none;
+     margin-right: 20px;
+ }
+
+ nav{
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+ #content{
+    float: left;
+    width: 75%;
+ }
+ /* div#content{
+    padding: 20px 120px;
+ } */
+ aside{
+     float: right;
+     width: 25%;
+     padding-left: 20px;
+ }
+/* opacity : 0.0 - 1.0; 0.5 berarti 50% dan seterusnya
+    opacity pada warna:  color: rgba(78,231,23, 0.5);
+*/
+/* dimensi overflow: visible, hidden, auto, scroll */
+/* border style: solid, dotted, dashed, double, groove, Hiddien */
+ footer{
+     padding: 20px;
+     color: white;
+     background-color: #00a2c6;
+     text-align: center;
+     font-weight: bold;
+ }
+
+ @media screen and (max-width: 1000px) {
+     #content,
+     aside {
+         width: 100%;
+         padding: 0;
+     }
+     
+ }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-direction{
+        flex-direction: column;
+        width: 800px;
+        height: 300px;
+        background-color: bisque;
+        border-radius: 12px;
+        border: 3px solid;
+        margin: 0 auto;
+    }
+    .flex-row{
+        display: flex;
+        width: 780px;
+        height: 100px;
+        margin: auto;
+        margin-top: 10px;
+        background-color: cadetblue;
+        border: 2px solid;
+        border-radius: 12px;
+    }
+    .box{
+        flex-grow: 1;
+        background-color: #fff;
+        padding: 5px;
+        border: 2px solid;
+        margin: 5px;
+        border-radius: 6px;
+    }
+</style>
+<body>
+    <div class="flex-direction">
+        <div class="flex-row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" style="flex-grow:2;"></div>
+        </div>
+
+        <div class="flex-row">
+            <div class="box"></div>
+            <div class="box" style="flex-grow:2;"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* google font */
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@300;400&family=Quicksand:wght@400;700&display=swap');
+        /* child selector */
+        div > p {
+            background-color: red;
+        }
+
+        /* descendant selector space */
+        div h1 {
+            background-color: yellow;
+        }
+        /* pseudo selector */
+        a:hover{
+            color: yellowgreen;
+            background-color: black;
+        }
+
+        a:link{
+            color: aqua;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: green;
+        }
+        a:active{
+            color: pink;
+            font-weight: bold;
+        }
+        /* pseudo element gunakan ::, hal ini untuk membedakan dengan pseudo class. sebenarnya bisa saja menggunakan : satu */
+        blockquote::before,
+        blockquote::after{
+            content: ']';
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        p::first-letter{
+            font-size: 2em;
+            /* 2m artinya 2x ukuran font standard */
+            font-weight: bold;
+            color:rgb(255, 106, 0);
+        }
+        /* 
+            shorthand pada font sytle {font: style weight variant size font-family} 
+            shorthand tidak harus ditulis semua, kita menuliskan font: font size font family , minimal harus ada.
+        */
+
+        /* value of text-decoration:underline, overline, line-through, none  */
+        /* value of text-transform: none, capitalize, uppercase, lowercase */
+        p#letter{
+            letter-spacing: 10px;
+        }
+        p#word{
+            word-spacing: 4px;
+        }
+
+        /* text shadow, membutuhkan TIGA BUAH NILAI, dan SATU BUAH NILAI WARNA. Total ada 4 nilai.
+            value: horizontal, vertical, (optional) tingkat keburaman, warna  */
+
+        p#one{
+            text-shadow: -30px -3px rgb(181, 255, 181);
+            color: aliceblue;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <body>
+            <div>
+                <p id="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A laudantium modi earum doloremque provident exercitationem soluta asperiores enim quibusdam officiis veritatis vel aliquam nobis labore unde rerum hic, alias necessitatibus!</p>
+                <p id="letter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis tenetur tempora alias pariatur ullam veritatis dolor quas, temporibus rerum, esse aspernatur! Vero cum soluta illo laborum maiores alias nobis quasi.</p>
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vitae doloribus cupiditate ipsam non explicabo sapiente, saepe cum eligendi itaque! Nam magni tenetur suscipit, voluptatum odio eveniet officia. Ab, id!</blockquote>
+            </div>
+            <div>
+                <a href="www.google.com">Google</a>
+                <a href="#container">Form</a>
+            </div>
+            <div>
+                <p id="word">Hallo ini child dari div pada paragraph p</p>
+                <section><p>Hallo ini p dalam ssection</p></section>
+            </div>
+            <div>
+                <h1>Hallo</h1>
+                <section><h1>Hello</h1></section>
+                <q><h1>hallo</h1></q>
+            </div>
+            <div id="container" class="container">
+                <form action="">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama"><br>
+                    <label for="alamat">Alamat:</label><br>
+                    <input type="text" id="alamat" name="alamat"><br>
+                    <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+                </form>
+            </div>
+            <footer>
+
+            </footer>
+        </body>
+    </main>
+    
+</body>
+</html>
